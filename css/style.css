@@ -1,0 +1,622 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto&display=swap");
+/* BREAKPOINTS */
+.button {
+  padding: .5rem 1.5rem;
+  cursor: pointer;
+  color: white;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: none;
+  font-weight: 600;
+}
+
+.button.button-primary {
+  background-color: #CF0010;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.button.button-primary:hover {
+  background-color: #b6000e;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.button.button-black {
+  background-color: black;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.button.button-black:hover {
+  background-color: #0d0d0d;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.button.button-grey {
+  background-color: #9D9D9D;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.button.button-grey:hover {
+  background-color: #aaaaaa;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.button.button-grey-black {
+  background-color: #EAEAEA;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  color: black;
+}
+
+.button.button-grey-black:hover {
+  background-color: #f7f7f7;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.button.button-cancel {
+  background-color: #B7B7B7;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.button.button-cancel:hover {
+  background-color: #c4c4c4;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.login {
+  width: 100%;
+  background-image: url("/images/header.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  width: 90%;
+  margin: auto;
+}
+
+.login .content form {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.login .content form .form-control {
+  text-align: center;
+  font-size: 24px;
+}
+
+.login .content form .btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.login .content form .btn-wrapper .button {
+  padding: .5rem 4rem;
+  font-size: 24px;
+}
+
+.login .content form .forgot-pass {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.login .content .logo {
+  color: white;
+  text-align: center;
+}
+
+.login .content .logo img {
+  margin-bottom: 1rem;
+}
+
+.login .content .logo h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@media (min-width: 64em) {
+  .login .content {
+    max-width: 20%;
+    margin: auto;
+  }
+}
+
+.form-control, .form-select {
+  border-radius: 0;
+  color: #2B2B2B;
+}
+
+.header {
+  background-image: url("/images/header.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 3rem;
+}
+
+.header .menu-top {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0px 0px 20px 20px;
+  padding: 10px 4rem;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.header .menu-top ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .menu-top ul li {
+  margin-right: 1rem;
+  padding-right: 1rem;
+  border-right: 1px solid black;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+
+.header .menu-top ul li:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: 0;
+}
+
+.header .logo {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.header .logo img {
+  max-width: 175px;
+  margin-bottom: .5rem;
+}
+
+.header .logo h4 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.header .menu-main {
+  padding: 1rem 0;
+  margin-bottom: 5rem;
+}
+
+.header .menu-main ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.header .menu-main ul li {
+  margin: 0 2rem;
+  padding-bottom: 4px;
+  font-weight: 500;
+  line-height: 1.25rem;
+  position: relative;
+}
+
+.header .menu-main ul li:after {
+  width: 2px;
+  background-color: white;
+  height: 80%;
+  content: '';
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -2rem;
+  position: absolute;
+}
+
+.header .menu-main ul li:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: 0;
+}
+
+.header .menu-main ul li:last-child:after {
+  display: none;
+}
+
+.header .menu-main ul li.active, .header .menu-main ul li:hover {
+  border-bottom: 3px solid #CF0010;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.header .search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 12px;
+  background-color: white;
+  width: 70%;
+  margin: auto;
+}
+
+.header .search-bar .container-fluid {
+  padding: 0;
+}
+
+.header .search-bar .where, .header .search-bar .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .search-bar .search .form-control {
+  margin-right: 1rem;
+}
+
+.take-booking {
+  padding: 2rem 0;
+  width: 70%;
+  margin: auto;
+}
+
+.take-booking .book-control {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.take-booking .book-control .button {
+  font-weight: 500;
+  min-width: 173px;
+}
+
+.take-booking .book-control .basket a {
+  text-decoration: underline;
+}
+
+.take-booking .item-card {
+  border: 1px solid #DCDCDC;
+}
+
+.take-booking .item-card .item-header {
+  position: relative;
+}
+
+.take-booking .item-card .item-header .item-img img {
+  width: 100%;
+}
+
+.take-booking .item-card .item-header .item-type {
+  position: absolute;
+  right: 0;
+  top: .5rem;
+  text-align: end;
+}
+
+.take-booking .item-card .item-header .item-type img {
+  width: 24px;
+  padding: 3px;
+  background-color: rgba(36, 36, 36, 0.8);
+  border-radius: 50%;
+  margin-bottom: 4px;
+}
+
+.take-booking .item-card .item-header .item-type .type-text {
+  padding: 2px 6px;
+  color: white;
+  font-size: 10px;
+  border-radius: 15px 0 0 15px;
+  background-color: rgba(36, 36, 36, 0.8);
+}
+
+.take-booking .item-card .item-body {
+  padding: 10px;
+}
+
+.take-booking .item-card .item-body .item-title, .take-booking .item-card .item-body .item-price, .take-booking .item-card .item-body .item-desc {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: .5rem;
+  color: #3E3E3E;
+}
+
+.take-booking .item-card .item-body .item-price {
+  font-size: 12px;
+}
+
+.take-booking .item-card .item-body .item-desc {
+  font-size: 14px;
+}
+
+.take-booking .item-card .item-body .item-more {
+  color: #CF0010;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.take-booking .item-card .item-body .item-more img {
+  margin-right: .5rem;
+}
+
+.offcanvas {
+  width: 50vw;
+}
+
+.offcanvas .oc-title {
+  font-size: 22px;
+  margin-bottom: .5rem;
+}
+
+.offcanvas .oc-image {
+  margin-bottom: 1.5rem;
+}
+
+.offcanvas .oc-image img {
+  width: 100%;
+}
+
+.offcanvas .oc-price, .offcanvas .oc-desc, .offcanvas .oc-type {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.offcanvas .oc-price {
+  font-size: 20px;
+}
+
+.offcanvas .oc-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #CF0010;
+  font-weight: 500;
+  margin-bottom: 4.5rem;
+}
+
+.offcanvas .choose-date {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem .75rem;
+  -webkit-box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.15);
+  border-top: 2px solid #CF0010;
+  margin-bottom: 2rem;
+}
+
+.offcanvas .choose-date .choose-text {
+  margin-right: 1.25rem;
+}
+
+.offcanvas .choose-date .choose-input {
+  position: relative;
+  margin-right: 1.25rem;
+}
+
+.offcanvas .choose-date .choose-input .icon-calendar {
+  position: absolute;
+  right: .75rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-top: -2px;
+}
+
+.offcanvas .booking-detail .booking-header {
+  margin-bottom: 2rem;
+}
+
+.offcanvas .booking-detail .booking-header .booking-title {
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: .25rem;
+}
+
+.offcanvas .booking-detail .booking-header .booking-max-guest {
+  font-size: 14px;
+  margin-bottom: .25rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.offcanvas .booking-detail .booking-header .booking-more {
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.offcanvas .booking-detail .booking-start-date {
+  font-family: 'Roboto', sans-serif;
+}
+
+.offcanvas .booking-detail .booking-start-date .start-date-text {
+  margin-bottom: 1rem;
+}
+
+.offcanvas .booking-detail .booking-start-date .booking-widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.offcanvas .booking-detail .booking-start-date .booking-widget .calendar-item {
+  padding: 1rem;
+  text-align: center;
+  border: 2px solid lightgray;
+  width: 14%;
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.offcanvas .booking-detail .booking-start-date .booking-widget .calendar-item .month {
+  font-size: 12px;
+}
+
+.offcanvas .booking-detail .booking-start-date .booking-widget .calendar-item .date {
+  font-size: 22px;
+  margin-bottom: 1.5rem;
+}
+
+.offcanvas .booking-detail .booking-start-date .booking-widget .calendar-item .select {
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.offcanvas .booking-detail .booking-start-date .booking-widget .calendar-item.disabled {
+  background-color: lightgray;
+}
+
+.offcanvas .booking-detail .booking-start-date .booking-widget .calendar-item.selected, .offcanvas .booking-detail .booking-start-date .booking-widget .calendar-item:not(.disabled):hover {
+  background-color: #CF0010;
+  color: white;
+  border-color: #CF0010;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.offcanvas .booking-detail .booking-options {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid lightgray;
+}
+
+.offcanvas .booking-detail .booking-options .options-text {
+  margin-bottom: .5rem;
+}
+
+.offcanvas .booking-detail .booking-options .options-selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.offcanvas .booking-detail .booking-options .options-selection select {
+  width: 35%;
+  margin-right: 1rem;
+}
+
+.offcanvas .booking-detail .add-to-basket {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 2px solid grey;
+}
+
+.offcanvas .booking-detail .add-to-basket .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  width: 60%;
+}
+
+.offcanvas .booking-detail .add-to-basket .price .price-text {
+  width: 50%;
+}
+
+.offcanvas .booking-detail .add-to-basket .button {
+  font-size: 1rem;
+  padding: .75rem 3rem;
+}
+
+.offcanvas .booking-detail .add-to-basket .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  width: 60%;
+  margin-top: 1rem;
+}
+
+.offcanvas .booking-detail .add-to-basket .total .total-text {
+  width: 50%;
+}
+
+html, body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,377 @@
+.header {
+    background-image: url('/images/header.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 3rem;
+
+    .menu-top {
+        background-color: rgba($color: white, $alpha: 0.8);
+        border-radius: 0px 0px 20px 20px;
+        padding: 10px 4rem;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 2rem;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            
+            li {
+                margin-right: 1rem;
+                padding-right: 1rem;
+                border-right: 1px solid black;
+                font-weight: 500;
+                line-height: 1.25rem;
+
+                &:last-child {
+                    margin-right: 0;
+                    padding-right: 0;
+                    border-right: 0;
+                }
+            }
+        }
+    }
+
+    .logo {
+        text-align: center;
+        color: white;
+        margin-bottom: 40px;
+
+        img {
+            max-width: 175px;
+            margin-bottom: .5rem;
+        }
+
+        h4 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+    }
+
+    .menu-main {
+        padding: 1rem 0;
+        margin-bottom: 5rem;
+        ul {
+            display: flex;
+            justify-content: center;
+            color: white;
+
+            li {
+                margin: 0 2rem;
+                padding-bottom: 4px;
+                font-weight: 500;
+                line-height: 1.25rem;
+                position: relative;
+
+                
+                &:after {
+                    width: 2px;
+                    background-color: white;
+                    height: 80%;
+                    content: '';
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: -2rem;
+                    position: absolute;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                    padding-right: 0;
+                    border-right: 0;
+
+                    &:after {
+                        display: none;
+                    }
+                }
+
+                &.active, &:hover {
+                    border-bottom: 3px solid $primary;
+                    transition: all .2s ease;
+                }
+            }
+        }
+    }
+
+    .search-bar {
+        display: flex;
+        padding: 20px 12px;
+        background-color: white;
+        width: 70%;
+        margin: auto;
+
+        .container-fluid {
+            padding: 0;
+        }
+
+        .where, .date {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .search {
+            .form-control {
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+.take-booking {
+    padding: 2rem 0;
+    width: 70%;
+    margin: auto;
+
+    .book-control {
+        justify-content: space-between;
+        margin-bottom: 1rem;
+
+        .button {
+            font-weight: 500;
+            min-width: 173px;
+        }
+
+        .basket {
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .item-card {
+        border: 1px solid #DCDCDC;
+        .item-header {
+            position: relative;
+            .item-img {
+                img {
+                    width: 100%;
+                }
+            }
+            .item-type {
+                position: absolute;
+                right: 0;
+                top: .5rem;
+                text-align: end;
+
+                img {
+                    width: 24px;
+                    padding: 3px;
+                    background-color: rgba(36, 36, 36, 0.8);
+                    border-radius: 50%;
+                    margin-bottom: 4px;
+                }
+
+                .type-text {
+                    padding: 2px 6px;
+                    color: white;
+                    font-size: 10px;
+                    border-radius: 15px 0 0 15px;
+                    background-color: rgba(36, 36, 36, 0.8);
+                }
+            }
+        }
+
+        .item-body {
+            padding: 10px;
+            .item-title, .item-price, .item-desc {
+                font-family: 'Roboto', sans-serif;
+                margin-bottom: .5rem;
+                color: #3E3E3E;
+            }
+
+            .item-price {
+                font-size: 12px;
+            }
+
+            .item-desc {
+                font-size: 14px;
+            }
+
+            .item-more {
+                color: $primary;
+                display: flex;
+                align-items: center;
+
+                img {
+                    margin-right: .5rem;
+                }
+            }
+        }
+    }
+}
+
+.offcanvas {
+    width: 50vw;
+    .oc-title {
+        font-size: 22px;
+        margin-bottom: .5rem;
+    }
+    .oc-image {
+        margin-bottom: 1.5rem;
+        img {
+            width: 100%;
+        }
+    }
+
+    .oc-price, .oc-desc, .oc-type {
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 1rem;
+    }
+
+    .oc-price {
+        font-size: 20px;
+    }
+
+    .oc-action {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $primary;
+        font-weight: 500;
+        margin-bottom: 4.5rem;
+    }
+
+    .choose-date {
+        display: inline-flex;
+        align-items: center;
+        padding: 1rem .75rem;
+        box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.15);
+        border-top: 2px solid $primary;
+        margin-bottom: 2rem;
+
+        .choose-text {
+            margin-right: 1.25rem;
+        }
+
+        .choose-input {
+            position: relative;
+            margin-right: 1.25rem;
+
+            .icon-calendar {
+                position: absolute;
+                right: .75rem;
+                top: 50%;
+                transform: translateY(-50%);
+                margin-top: -2px;
+            }
+        }
+    }
+
+    .booking-detail {
+        .booking-header {
+            margin-bottom: 2rem;
+            .booking-title {
+                font-size: 22px;
+                @include roboto();
+                margin-bottom: .25rem;
+            }
+            .booking-max-guest {
+                font-size: 14px;
+                margin-bottom: .25rem;
+                @include roboto();
+            }
+            .booking-more {
+                font-size: 14px;
+                text-decoration: underline;
+            }
+        }
+
+        .booking-start-date {
+            @include roboto();
+            .start-date-text {
+                margin-bottom: 1rem;
+            }
+
+            .booking-widget {
+                display: flex;
+                justify-content: center;
+
+                .calendar-item {
+                    padding: 1rem;
+                    text-align: center;
+                    border: 2px solid rgb(211, 211, 211);
+                    width: 14%;
+                    cursor: pointer;
+                    transition: all .2s ease;
+
+                    .month {
+                        font-size: 12px;
+                    }
+
+                    .date {
+                        font-size: 22px;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    .select {
+                        font-size: 14px;
+                        margin-top: 1rem;
+                    }
+
+                    &.disabled {
+                        background-color:  rgb(211, 211, 211);
+                    }
+
+                    &.selected, &:not(.disabled):hover {
+                        background-color: $primary;
+                        color: white;
+                        border-color: $primary;
+                        transition: all .2s ease;
+                    }
+                }
+            }
+        }
+
+        .booking-options {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid lightgray;
+
+            .options-text {
+                margin-bottom: .5rem;
+            }
+            .options-selection {
+                display: flex;
+
+                select {
+                    width: 35%;
+                    margin-right: 1rem;
+                }
+            }
+        }
+
+        .add-to-basket {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 2px solid grey;
+            .price {
+                display: flex;
+                align-items: center;
+                font-size: 1.5rem;
+                width: 60%;
+
+                .price-text {
+                    width: 50%;
+                }
+            }
+
+            .button {
+                font-size: 1rem;
+                padding: .75rem 3rem;
+            }
+
+            .total {
+                display: flex;
+                font-size: 2rem;
+                width: 60%;
+                margin-top: 1rem;
+
+                .total-text {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
