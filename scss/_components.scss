@@ -3,6 +3,7 @@
     cursor: pointer;
     color: white;
     display: inline-flex;
+    align-items: center;
     justify-content: center;
     outline: none;
     user-select: none;
@@ -48,6 +49,12 @@
             background-color: lighten($color: #EAEAEA, $amount: 5%);
             transition: all .2s ease;
         }
+    }
+
+    &.button-hollow-black {
+        background-color: transparent;
+        color: black;
+        border: 1px solid black;
     }
 
     &.button-cancel {
