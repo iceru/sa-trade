@@ -218,6 +218,10 @@
                     display: flex;
                     width: 100%;
 
+                    @include breakpoint(mobileonly) {
+                        overflow-x: auto;
+                    }
+
                     .calendar-item {
                         padding: 1rem;
                         text-align: center;
@@ -291,17 +295,16 @@
             .button {
                 font-size: 1rem;
                 padding: .75rem 3rem;
+
+                @include breakpoint(mobileonly) {
+                    padding: .75rem 1rem;
+                    font-size: .75rem;
+                }
             }
 
             .total {
-                display: flex;
                 font-size: 2rem;
-                width: 60%;
                 margin-top: 1rem;
-
-                .total-text {
-                    width: 50%;
-                }
             }
         }
     }

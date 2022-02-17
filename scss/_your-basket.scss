@@ -44,6 +44,10 @@
                     background: rgb(243, 243, 243);
                     margin-bottom: 1rem;
 
+                    @include breakpoint(mobileonly) {
+                        padding: 1rem;
+                    }
+
                     .basket-desc {
                         margin-bottom: 1.5rem;
                     }
@@ -59,7 +63,7 @@
                         }
 
                         .action {
-                            margin-top: 2rem;
+                            margin-top: 1rem;
                             
                             .button {
                                 font-weight: 400;
@@ -91,6 +95,36 @@
                             font-weight: bold;
                             font-size: 18px;
                         }
+                        
+                        @include breakpoint(mobileonly) {
+                            padding: 1rem;
+                            
+                            .price-container {
+                                margin-top: 1rem;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                .price {
+                                    width: 50%;
+                                }
+
+                                .price-img {
+                                    margin-bottom: 0;
+                                    img {
+                                        width: 3rem;
+                                    }
+                                }
+                            }
+
+                            .action {
+                                display: flex;
+
+                                .button {
+                                    min-width: 120px;
+                                }
+                            }
+                        }
                     }
 
                     .basket-total {
@@ -114,6 +148,16 @@
                             padding: 1rem;
                             font-weight: 400;
                             font-size: 18px;
+                        }
+                    }
+
+                    @include breakpoint(mobileonly) {
+                        .action {
+                            flex-wrap: wrap;
+                            .button {
+                                width: 100%;
+                                margin-bottom: 1rem;
+                            }
                         }
                     }
                 }
