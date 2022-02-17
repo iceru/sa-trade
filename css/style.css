@@ -234,11 +234,19 @@
 }
 
 .header .search-bar .date {
+  position: relative;
   cursor: pointer;
 }
 
 .header .search-bar .date span {
   margin-right: .5rem;
+}
+
+.header .search-bar .date input {
+  visibility: hidden;
+  width: 0;
+  position: absolute;
+  left: 0;
 }
 
 .header .search-bar .search {
@@ -269,6 +277,10 @@
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 700;
+}
+
+.page-title span {
+  text-transform: capitalize;
 }
 
 .search-filter {
@@ -316,6 +328,22 @@
 
 .table th, .table td {
   padding: 1rem;
+}
+
+.report-selection {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid lightgray;
+}
+
+.report-selection .title {
+  color: gray;
+  margin-bottom: .5rem;
+  font-size: 20px;
+}
+
+.report-selection .button {
+  padding: .5rem 4rem;
 }
 
 .login {
@@ -477,6 +505,7 @@
 
 .take-booking .item-card .item-body .item-title, .take-booking .item-card .item-body .item-price, .take-booking .item-card .item-body .item-desc {
   font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   margin-bottom: .5rem;
   color: #3E3E3E;
 }
@@ -612,40 +641,52 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.offcanvas .booking-detail .booking-start-date .booking-widget .calendar-item {
+.offcanvas .booking-detail .booking-start-date .booking-widget .nav-button {
+  padding: 0 .75rem;
+  cursor: pointer;
+}
+
+.offcanvas .booking-detail .booking-start-date .booking-widget .calendars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.offcanvas .booking-detail .booking-start-date .booking-widget .calendars .calendar-item {
   padding: 1rem;
   text-align: center;
   border: 2px solid lightgray;
-  width: 14%;
+  width: 100%;
   cursor: pointer;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
 
-.offcanvas .booking-detail .booking-start-date .booking-widget .calendar-item .month {
+.offcanvas .booking-detail .booking-start-date .booking-widget .calendars .calendar-item .month {
   font-size: 12px;
 }
 
-.offcanvas .booking-detail .booking-start-date .booking-widget .calendar-item .date {
+.offcanvas .booking-detail .booking-start-date .booking-widget .calendars .calendar-item .date {
   font-size: 22px;
   margin-bottom: 1.5rem;
 }
 
-.offcanvas .booking-detail .booking-start-date .booking-widget .calendar-item .select {
+.offcanvas .booking-detail .booking-start-date .booking-widget .calendars .calendar-item .select {
   font-size: 14px;
   margin-top: 1rem;
 }
 
-.offcanvas .booking-detail .booking-start-date .booking-widget .calendar-item.disabled {
+.offcanvas .booking-detail .booking-start-date .booking-widget .calendars .calendar-item.disabled {
   background-color: lightgray;
 }
 
-.offcanvas .booking-detail .booking-start-date .booking-widget .calendar-item.selected, .offcanvas .booking-detail .booking-start-date .booking-widget .calendar-item:not(.disabled):hover {
+.offcanvas .booking-detail .booking-start-date .booking-widget .calendars .calendar-item.selected, .offcanvas .booking-detail .booking-start-date .booking-widget .calendars .calendar-item:not(.disabled):hover {
   background-color: #CF0010;
   color: white;
   border-color: #CF0010;
@@ -852,7 +893,7 @@
   font-size: 18px;
 }
 
-.suppliers-edit .content-header .action-header {
+.edits .content-header .action-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -865,21 +906,118 @@
   margin-bottom: 2rem;
 }
 
-.suppliers-edit .content-header .header-title {
+.edits .content-header .header-title {
   font-weight: 600;
   font-size: 22px;
   margin-bottom: 1rem;
 }
 
-.suppliers-edit .content-header .header-text {
+.edits .content-header .header-text {
   padding: 1rem 0;
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
+  margin-bottom: 2rem;
+}
+
+.edits .content-header .header-text small {
+  font-size: 12px;
+}
+
+.edits .content-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.edits .content-footer .btn-wrapper .button:first-child {
+  margin-right: .5rem;
+}
+
+.admin .content-body {
+  margin-top: 2rem;
+}
+
+.admin .content-body .item-link {
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .75rem 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.admin .content-body .item-link h4 {
+  font-size: 18px;
+}
+
+.admin .content-body .item-link img {
+  width: 20px;
+  height: 20px;
+}
+
+.admin .content-body .form-groups {
+  margin-bottom: 3.5rem;
+}
+
+.admin .content-body .form-groups .form-title {
+  padding: .5rem 1.5rem;
+  background-color: black;
+  color: white;
+  margin-bottom: 18px;
+}
+
+.admin .content-body .form-groups .form-item {
+  padding-left: 1.5rem;
+  width: 60%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin .content-body .form-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.admin .content-body .form-button.column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin .content-body .form-button.column .button {
+  text-align: center;
+  min-width: 250px;
+}
+
+.admin .content-body .form-button.column .button:first-child {
   margin-bottom: 1rem;
 }
 
-.suppliers-edit .content-header .header-text small {
-  font-size: 12px;
+.admin .content-body .form-button .button {
+  width: 200px;
 }
 
 html, body {
@@ -893,7 +1031,7 @@ ul {
   margin: 0;
 }
 
-p {
+h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 0;
 }
 

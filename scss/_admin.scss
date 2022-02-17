@@ -1,0 +1,61 @@
+.admin {
+    .content-body {
+        margin-top: 2rem;
+        .item-link {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .75rem 1.5rem;
+            margin-bottom: 1.25rem;
+
+            h4 {
+                font-size: 18px;
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+        
+        .form-groups {
+            margin-bottom: 3.5rem;
+            
+            .form-title {
+                padding: .5rem 1.5rem;
+                background-color: black;
+                color: white;
+                margin-bottom: 18px;
+            }
+            .form-item {
+                padding-left: 1.5rem;
+                width: 60%;
+                align-items: center;
+            }
+        }
+
+        .form-button {
+            display: flex;
+            justify-content: flex-end;
+            &.column {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .button {
+                    text-align: center;
+                    min-width: 250px;
+                }
+
+                .button:first-child {
+                    margin-bottom: 1rem;
+                }
+            }
+            .button {
+                width: 200px;
+            }
+        }
+    }
+}

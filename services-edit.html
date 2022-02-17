@@ -38,6 +38,11 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <script
+      src="https://cdn.tiny.cloud/1/w6cvfb6bgswq49z8hbl7msw8t7r9cw5auu24heasdln1q2fy/tinymce/5/tinymce.min.js"
+      referrerpolicy="origin"
+    ></script>
   </head>
 
   <body class="edits">
@@ -123,7 +128,7 @@
         <div class="row">
           <div class="col-12">
             <div class="page-title">
-              Suppliers
+              Services
             </div>
             <div class="content-header">
               <div class="action-header">
@@ -172,16 +177,85 @@
               </div>
             </div>
             <div class="content-body">
-              <label for="status" class="form-label">Status</label>
-              <select
-                class="form-select"
-                name="status"
-                id="status"
-                aria-label="status"
-              >
-                <option value="approved" selected>Approved</option>
-                <option value="not-aproved">Not Approved</option>
-              </select>
+              <div class="mb-4">
+                <div class="mb-2">
+                  <label for="txaname" class="form-label">
+                    TXA Name
+                  </label>
+                  <input type="text" class="form-control" id="txaname" />
+                </div>
+                <div class="form-check mb-2">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    name=""
+                    id=""
+                    value="checkedValue"
+                    checked
+                  />
+                  <label class="form-check-label" for="">
+                    Override with
+                  </label>
+                </div>
+                <input type="text" class="form-control" id="txaoverride" />
+              </div>
+              <div class="mb-4">
+                <div class="mb-2">
+                  <label for="txashort" class="form-label">
+                    TXA Short Description
+                  </label>
+                  <textarea
+                    class="form-control"
+                    name="txashort"
+                    id="txashort"
+                    rows="4"
+                  ></textarea>
+                </div>
+                <div class="form-check mb-2">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    name=""
+                    id=""
+                    value="checkedValue"
+                    checked
+                  />
+                  <label class="form-check-label" for="">
+                    Override with
+                  </label>
+                </div>
+                <textarea id="tiny" class="tiny"></textarea>
+              </div>
+              <div class="mb-4">
+                <div class="mb-2">
+                  <label for="txashort" class="form-label">
+                    TXA Long Description
+                  </label>
+                  <textarea
+                    class="form-control"
+                    name="txalong"
+                    id="txalong"
+                    rows="4"
+                  ></textarea>
+                </div>
+                <div class="form-check mb-2">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    name=""
+                    id=""
+                    value="checkedValue"
+                  />
+                  <label class="form-check-label" for="">
+                    Override with
+                  </label>
+                </div>
+                <textarea
+                  id="tiny"
+                  class="tiny"
+                  name="txalongoverride"
+                ></textarea>
+              </div>
             </div>
             <div class="content-footer">
               <div class="btn-wrapper">
@@ -198,4 +272,13 @@
       </div>
     </div>
   </body>
+
+  <script>
+    tinymce.init({
+      selector: '.tiny',
+      plugins:
+        'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+      toolbar_mode: 'floating',
+    })
+  </script>
 </html>

@@ -71,6 +71,7 @@
             padding: 10px;
             .item-title, .item-price, .item-desc {
                 font-family: 'Roboto', sans-serif;
+                font-weight: 400;
                 margin-bottom: .5rem;
                 color: #3E3E3E;
             }
@@ -180,39 +181,49 @@
 
             .booking-widget {
                 display: flex;
-                justify-content: center;
+                align-items: center;
 
-                .calendar-item {
-                    padding: 1rem;
-                    text-align: center;
-                    border: 2px solid rgb(211, 211, 211);
-                    width: 14%;
+                .nav-button {
+                    padding: 0 .75rem;
                     cursor: pointer;
-                    transition: all .2s ease;
+                }
 
-                    .month {
-                        font-size: 12px;
-                    }
+                .calendars {
+                    display: flex;
+                    width: 100%;
 
-                    .date {
-                        font-size: 22px;
-                        margin-bottom: 1.5rem;
-                    }
-
-                    .select {
-                        font-size: 14px;
-                        margin-top: 1rem;
-                    }
-
-                    &.disabled {
-                        background-color:  rgb(211, 211, 211);
-                    }
-
-                    &.selected, &:not(.disabled):hover {
-                        background-color: $primary;
-                        color: white;
-                        border-color: $primary;
+                    .calendar-item {
+                        padding: 1rem;
+                        text-align: center;
+                        border: 2px solid rgb(211, 211, 211);
+                        width: 100%;
+                        cursor: pointer;
                         transition: all .2s ease;
+    
+                        .month {
+                            font-size: 12px;
+                        }
+    
+                        .date {
+                            font-size: 22px;
+                            margin-bottom: 1.5rem;
+                        }
+    
+                        .select {
+                            font-size: 14px;
+                            margin-top: 1rem;
+                        }
+    
+                        &.disabled {
+                            background-color:  rgb(211, 211, 211);
+                        }
+    
+                        &.selected, &:not(.disabled):hover {
+                            background-color: $primary;
+                            color: white;
+                            border-color: $primary;
+                            transition: all .2s ease;
+                        }
                     }
                 }
             }

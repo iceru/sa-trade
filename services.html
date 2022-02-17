@@ -40,7 +40,7 @@
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   </head>
 
-  <body class="suppliers-edit">
+  <body class="bookings">
     <div class="header">
       <div class="container">
         <div class="row">
@@ -69,13 +69,13 @@
               <li>
                 <a href="/">Take a Booking</a>
               </li>
-              <li class="active">
+              <li>
                 <a href="/bookings.html">Bookings</a>
               </li>
               <li>
                 <a href="/suppliers.html">Suppliers</a>
               </li>
-              <li>
+              <li class="active">
                 <a href="/services.html">Services</a>
               </li>
               <li>
@@ -123,61 +123,66 @@
         <div class="row">
           <div class="col-12">
             <div class="page-title">
-              Reports
+              Services
             </div>
-            <div class="content-body">
-              <div class="report-selection">
-                <div class="title">Report Selection</div>
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input
-                      type="radio"
-                      class="form-check-input"
-                      name="radio"
-                      id=""
-                      checked
-                    />
-                    Bookings
-                  </label>
-                </div>
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input
-                      type="radio"
-                      class="form-check-input"
-                      name="radio"
-                      id=""
-                    />
-                    Suppliers
-                  </label>
-                </div>
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input
-                      type="radio"
-                      class="form-check-input"
-                      name="radio"
-                      id=""
-                    />
-                    Feedback
-                  </label>
-                </div>
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input
-                      type="radio"
-                      class="form-check-input"
-                      name="radio"
-                      id=""
-                    />
-                    Baskets
-                  </label>
-                </div>
-                <div class="button button-primary mt-3">
-                  Next
-                </div>
+            <div class="search-filter">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search by name, booking ID, email or member #"
+              />
+              <div class="icon-search">
+                <i class="fas fa-search"></i>
+              </div>
+              <div class="button button-primary">
+                Filter
+                <i class="ms-2 fas fa-cog"></i>
               </div>
             </div>
+            <table class="table table-responsive table-bordered">
+              <thead>
+                <tr class="table-dark">
+                  <th>Booking ID</th>
+                  <th>Customer Name</th>
+                  <th>Email</th>
+                  <th>Phone #</th>
+                  <th>Total</th>
+                  <th>Updated</th>
+                  <th>Status</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row">BOOK-LHRXUTIJ01</td>
+                  <td>MAUREEN SARA</td>
+                  <td>rmjk@bigpond.com</td>
+                  <td>0882962774</td>
+                  <td>$75.60</td>
+                  <td>15 Sep 2021 11:11</td>
+                  <td>Completed</td>
+                  <td>
+                    <a href="/services-edit.html">
+                      <i class="fas fa-edit"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">BOOK-LHRXUTIJ01</td>
+                  <td>MAUREEN SARA</td>
+                  <td>rmjk@bigpond.com</td>
+                  <td>0882962774</td>
+                  <td>$75.60</td>
+                  <td>15 Sep 2021 11:11</td>
+                  <td>Completed</td>
+                  <td>
+                    <a href="/services-edit.html">
+                      <i class="fas fa-edit"></i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>

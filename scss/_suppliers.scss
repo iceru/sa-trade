@@ -1,4 +1,4 @@
-.suppliers-edit {
+.edits {
     .content-header {
         .action-header {
             display: flex;
@@ -17,10 +17,22 @@
             padding: 1rem 0;
             border-top: 1px solid lightgray;
             border-bottom: 1px solid lightgray;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
 
             small {
                 font-size: 12px;
+            }
+        }
+    }
+
+    .content-footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+
+        .btn-wrapper {
+            .button:first-child{
+                margin-right: .5rem;
             }
         }
     }
