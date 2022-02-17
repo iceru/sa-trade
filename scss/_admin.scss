@@ -61,3 +61,58 @@
         width: 200px;
     }
 }
+
+.form-accordion {
+    .accordion-item {
+        border: none;
+        font-size: 14px;
+
+        .accordion-button {
+            border-bottom: 1px solid lightgray;
+            border-radius: 0;
+            font-weight: bold;
+            font-size: 14px;
+            box-shadow: none;
+            padding: .75rem 1.25rem;
+
+            &:after {
+                background-image: none;
+                content: '+';
+                font-weight: 400;
+                font-size: 18px;
+            }
+
+            &:focus {
+                box-shadow: none;
+            }
+
+            &:not(.collapsed) {
+                background-color: #EAEAEA;
+                border: none;
+                color: black;
+
+                &:after {
+                    content: '-';
+                    transform: none;
+                }
+            }
+        }
+
+        .accordion-body {
+            background-color: #EAEAEA;
+            padding-top: 0;
+            display: flex;
+            justify-content: space-between;
+
+            .btn-wrapper {
+                margin-top: 1rem;
+                margin-right: 4rem;
+
+                .button {
+                    min-width: 120px;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

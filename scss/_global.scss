@@ -5,6 +5,10 @@
     background-size: cover;
     padding-bottom: 1rem;
 
+    .row {
+        margin: 0;
+    }
+
     .menu-top {
         background-color: rgba($color: white, $alpha: 0.8);
         border-radius: 0px 0px 20px 20px;
@@ -96,7 +100,7 @@
 
     .search-bar {
         display: none;
-        padding: 20px 12px;
+        padding: 12px;
         background-color: white;
         width: 70%;
         margin: auto;
@@ -142,6 +146,33 @@
             padding-left: 1rem;
             .form-control {
                 margin-right: 1rem;
+            }
+        }
+    }
+
+    @include breakpoint(mobileonly) {
+        .menu-top, .menu-main, .search-bar {
+            width: 100%;
+        }
+
+        .menu-main {
+            overflow-x: auto;
+
+            ul {
+                justify-content: start;
+
+                li {
+                    white-space: nowrap;
+                    margin: 0 1.5rem;
+
+                    &:after {
+                        right: -1.5rem;
+                    }
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
             }
         }
     }

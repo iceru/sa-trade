@@ -17,6 +17,7 @@
         &:hover {
             background-color: darken($color: $primary, $amount: 5%);
             transition: all .2s ease;
+            color: white;
         }
     }
 
@@ -37,6 +38,7 @@
         &:hover {
             background-color: lighten($color: #9D9D9D, $amount: 5%);
             transition: all .2s ease;
+            color: white;
         }
     }
 
@@ -48,6 +50,7 @@
         &:hover {
             background-color: lighten($color: #EAEAEA, $amount: 5%);
             transition: all .2s ease;
+            color: black;
         }
     }
 

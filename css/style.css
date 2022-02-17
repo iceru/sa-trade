@@ -32,6 +32,7 @@
   background-color: #b6000e;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
+  color: white;
 }
 
 .button.button-black {
@@ -56,6 +57,7 @@
   background-color: #aaaaaa;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
+  color: white;
 }
 
 .button.button-grey-black {
@@ -69,6 +71,7 @@
   background-color: #f7f7f7;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
+  color: black;
 }
 
 .button.button-hollow-black {
@@ -95,6 +98,10 @@
   background-position: center;
   background-size: cover;
   padding-bottom: 1rem;
+}
+
+.header .row {
+  margin: 0;
 }
 
 .header .menu-top {
@@ -198,7 +205,7 @@
 
 .header .search-bar {
   display: none;
-  padding: 20px 12px;
+  padding: 12px;
   background-color: white;
   width: 70%;
   margin: auto;
@@ -255,6 +262,30 @@
 
 .header .search-bar .search .form-control {
   margin-right: 1rem;
+}
+
+@media (max-width: 37.5em) {
+  .header .menu-top, .header .menu-main, .header .search-bar {
+    width: 100%;
+  }
+  .header .menu-main {
+    overflow-x: auto;
+  }
+  .header .menu-main ul {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .header .menu-main ul li {
+    white-space: nowrap;
+    margin: 0 1.5rem;
+  }
+  .header .menu-main ul li:after {
+    right: -1.5rem;
+  }
+  .header .menu-main ul li:first-child {
+    margin-left: 0;
+  }
 }
 
 .content {
@@ -451,6 +482,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 1rem;
 }
 
@@ -537,8 +571,26 @@
   margin-right: .5rem;
 }
 
+@media (max-width: 37.5em) {
+  .take-booking {
+    width: 100%;
+  }
+  .take-booking .book-control {
+    display: block;
+  }
+  .take-booking .book-control .btn-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+
 .offcanvas {
   width: 50vw;
+}
+
+@media (max-width: 37.5em) {
+  .offcanvas {
+    width: 100vw;
+  }
 }
 
 .offcanvas .oc-title {
@@ -1031,6 +1083,66 @@
 
 .form-button .button {
   width: 200px;
+}
+
+.form-accordion .accordion-item {
+  border: none;
+  font-size: 14px;
+}
+
+.form-accordion .accordion-item .accordion-button {
+  border-bottom: 1px solid lightgray;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 14px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: .75rem 1.25rem;
+}
+
+.form-accordion .accordion-item .accordion-button:after {
+  background-image: none;
+  content: '+';
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.form-accordion .accordion-item .accordion-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form-accordion .accordion-item .accordion-button:not(.collapsed) {
+  background-color: #EAEAEA;
+  border: none;
+  color: black;
+}
+
+.form-accordion .accordion-item .accordion-button:not(.collapsed):after {
+  content: '-';
+  -webkit-transform: none;
+          transform: none;
+}
+
+.form-accordion .accordion-item .accordion-body {
+  background-color: #EAEAEA;
+  padding-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-accordion .accordion-item .accordion-body .btn-wrapper {
+  margin-top: 1rem;
+  margin-right: 4rem;
+}
+
+.form-accordion .accordion-item .accordion-body .btn-wrapper .button {
+  min-width: 120px;
+  font-size: 1rem;
 }
 
 .settings hr {

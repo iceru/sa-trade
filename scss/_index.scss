@@ -19,6 +19,7 @@
 
     .book-control {
         justify-content: space-between;
+        display: flex;
         margin-bottom: 1rem;
 
         .button {
@@ -100,10 +101,26 @@
             }
         }
     }
+
+    @include breakpoint(mobileonly) {
+        width: 100%;
+
+        .book-control {
+            display: block;
+
+            .btn-wrapper {
+                margin-bottom: 1rem;
+            }
+        }
+    }
 }
 
 .offcanvas {
     width: 50vw;
+
+    @include breakpoint(mobileonly) {
+        width: 100vw;
+    }
     .oc-title {
         font-size: 22px;
         margin-bottom: .5rem;
