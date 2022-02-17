@@ -36,26 +36,28 @@
             }
         }
 
-        .form-button {
-            display: flex;
-            justify-content: flex-end;
-            &.column {
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+        
+    }
+}
 
-                .button {
-                    text-align: center;
-                    min-width: 250px;
-                }
+.form-button {
+    display: flex;
+    justify-content: flex-end;
+    &.column {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-                .button:first-child {
-                    margin-bottom: 1rem;
-                }
-            }
-            .button {
-                width: 200px;
-            }
+        .button {
+            text-align: center;
+            min-width: 250px;
         }
+
+        .button:first-child {
+            margin-bottom: 1rem;
+        }
+    }
+    .button {
+        width: 200px;
     }
 }

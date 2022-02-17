@@ -463,6 +463,10 @@
   text-decoration: underline;
 }
 
+.take-booking .item-wrapper {
+  margin-bottom: 2rem;
+}
+
 .take-booking .item-card {
   border: 1px solid #DCDCDC;
   height: 100%;
@@ -489,6 +493,7 @@
   background-color: rgba(36, 36, 36, 0.8);
   border-radius: 50%;
   margin-bottom: 4px;
+  margin-right: .25rem;
 }
 
 .take-booking .item-card .item-header .item-type .type-text {
@@ -626,6 +631,10 @@
 .offcanvas .booking-detail .booking-header .booking-more {
   font-size: 14px;
   text-decoration: underline;
+}
+
+.offcanvas .booking-detail .booking-content {
+  padding: 0 .5rem;
 }
 
 .offcanvas .booking-detail .booking-start-date {
@@ -937,6 +946,10 @@
   margin-right: .5rem;
 }
 
+.edits .status {
+  margin-bottom: 3rem;
+}
+
 .admin .content-body {
   margin-top: 2rem;
 }
@@ -985,7 +998,7 @@
           align-items: center;
 }
 
-.admin .content-body .form-button {
+.form-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -994,7 +1007,7 @@
           justify-content: flex-end;
 }
 
-.admin .content-body .form-button.column {
+.form-button.column {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1007,17 +1020,34 @@
           align-items: center;
 }
 
-.admin .content-body .form-button.column .button {
+.form-button.column .button {
   text-align: center;
   min-width: 250px;
 }
 
-.admin .content-body .form-button.column .button:first-child {
+.form-button.column .button:first-child {
   margin-bottom: 1rem;
 }
 
-.admin .content-body .form-button .button {
+.form-button .button {
   width: 200px;
+}
+
+.settings hr {
+  margin: 1.5rem 0;
+  background-color: gray;
+}
+
+.settings .content-body {
+  margin-bottom: 2rem;
+}
+
+.settings .content-body .form-label {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: gray;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 html, body {

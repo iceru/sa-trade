@@ -33,6 +33,10 @@
         }
     }
 
+    .item-wrapper {
+        margin-bottom: 2rem;
+    }
+
     .item-card {
         border: 1px solid #DCDCDC;
         height: 100%;
@@ -55,6 +59,7 @@
                     background-color: rgba(36, 36, 36, 0.8);
                     border-radius: 50%;
                     margin-bottom: 4px;
+                    margin-right: .25rem;
                 }
 
                 .type-text {
@@ -171,6 +176,10 @@
                 font-size: 14px;
                 text-decoration: underline;
             }
+        }
+
+        .booking-content {
+            padding: 0 .5rem;
         }
 
         .booking-start-date {

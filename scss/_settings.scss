@@ -1,0 +1,16 @@
+.settings {
+    hr {
+        margin: 1.5rem 0;
+        background-color: gray;
+    }
+
+    .content-body {
+        margin-bottom: 2rem;
+        .form-label {
+            @include roboto();
+            color: gray;
+            font-weight: 500;
+            font-size: 18px;
+        }
+    }
+}
