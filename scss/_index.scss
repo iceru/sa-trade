@@ -9,6 +9,12 @@
         .search-bar {
             display: flex;
         }
+
+        @include breakpoint(untilTablet) {
+            .menu-main {
+                margin-bottom: 2rem;
+            }
+        }
     }
 }
 

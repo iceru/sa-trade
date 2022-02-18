@@ -276,6 +276,9 @@
   .header .menu-top ul li:first-child {
     margin-bottom: .5rem;
   }
+  .header .logo {
+    margin-bottom: 1.5rem;
+  }
   .header .menu-main {
     overflow-x: auto;
   }
@@ -523,6 +526,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 60em) {
+  .index .header .menu-main {
+    margin-bottom: 2rem;
+  }
 }
 
 .take-booking {
