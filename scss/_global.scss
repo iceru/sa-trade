@@ -150,7 +150,7 @@
         }
     }
 
-    @include breakpoint(mobileonly) {
+    @include breakpoint(untilTablet) {
         .menu-top, .menu-main, .search-bar {
             width: 100%;
         }
@@ -243,6 +243,12 @@
     margin: auto;
     position: relative;
     margin-bottom: 2rem;
+
+    @include breakpoint(untilTablet) {
+        width: 100%;
+        padding: 1rem .5rem;
+        font-size: .85rem;
+    }
     
     .form-control {
         @include roboto();
@@ -269,12 +275,20 @@
     }
 }
 
+.table-overflow {
+    overflow-x: auto;
+}
+
 .table {
     .table-dark {
         --bs-table-bg: black !important;
     }
-    th, td {
-        padding: 1rem;
+    font-size: .8rem;
+    @include breakpoint(laptop) {
+        th, td {
+            padding: 1rem;
+            font-size: 1rem;
+        }
     }
 }
 

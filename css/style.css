@@ -265,7 +265,7 @@
   margin-right: 1rem;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 60em) {
   .header .menu-top, .header .menu-main, .header .search-bar {
     width: 100%;
   }
@@ -351,6 +351,14 @@
   margin-bottom: 2rem;
 }
 
+@media (max-width: 60em) {
+  .search-filter {
+    width: 100%;
+    padding: 1rem .5rem;
+    font-size: .85rem;
+  }
+}
+
 .search-filter .form-control {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -377,12 +385,23 @@
   left: 1rem;
 }
 
+.table-overflow {
+  overflow-x: auto;
+}
+
+.table {
+  font-size: .8rem;
+}
+
 .table .table-dark {
   --bs-table-bg: black !important;
 }
 
-.table th, .table td {
-  padding: 1rem;
+@media (min-width: 64em) {
+  .table th, .table td {
+    padding: 1rem;
+    font-size: 1rem;
+  }
 }
 
 .report-selection {
@@ -519,6 +538,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 1rem;
 }
 
@@ -606,9 +628,6 @@
 }
 
 @media (max-width: 37.5em) {
-  .take-booking {
-    width: 100%;
-  }
   .take-booking .book-control {
     display: block;
   }
@@ -617,11 +636,17 @@
   }
 }
 
+@media (max-width: 60em) {
+  .take-booking {
+    width: 100%;
+  }
+}
+
 .offcanvas {
   width: 50vw;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 60em) {
   .offcanvas {
     width: 100vw;
   }
@@ -1141,6 +1166,13 @@
           align-items: center;
 }
 
+@media (max-width: 60em) {
+  .admin .content-body .form-groups .form-item {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
 .form-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1234,6 +1266,16 @@
 .form-accordion .accordion-item .accordion-body .btn-wrapper .button {
   min-width: 120px;
   font-size: 1rem;
+}
+
+@media (max-width: 60em) {
+  .form-accordion .accordion-item .accordion-body .btn-wrapper {
+    margin: 0;
+  }
+  .form-accordion .accordion-item .accordion-body .btn-wrapper .button {
+    font-size: .85rem;
+    min-width: 0;
+  }
 }
 
 .settings hr {

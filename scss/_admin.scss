@@ -34,6 +34,13 @@
                 width: 60%;
                 align-items: center;
             }
+
+            @include breakpoint(untilTablet) {
+                .form-item {
+                    width: 100%;
+                    padding-left: 0;
+                }
+            }
         }
 
         
@@ -111,6 +118,17 @@
                 .button {
                     min-width: 120px;
                     font-size: 1rem;
+                }
+            }
+
+            @include breakpoint(untilTablet) {
+                .btn-wrapper {
+                    margin: 0;
+                    
+                    .button {
+                        font-size: .85rem;
+                        min-width: 0;
+                    }
                 }
             }
         }
