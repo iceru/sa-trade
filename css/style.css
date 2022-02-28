@@ -433,6 +433,25 @@
   padding: .5rem 4rem;
 }
 
+.pagination .page-item .page-link {
+  color: black;
+}
+
+.pagination .page-item .page-link:hover {
+  background-color: #dadada;
+}
+
+.pagination .page-item .page-link:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(168, 168, 168, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(168, 168, 168, 0.25);
+}
+
+.pagination .page-item.active .page-link {
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+
 .login {
   width: 100%;
   background-image: url("/images/header.png");
