@@ -89,6 +89,14 @@
                 color: #3E3E3E;
             }
 
+            .item-title, .item-desc{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+
             .item-price {
                 font-size: 12px;
             }

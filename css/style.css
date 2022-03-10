@@ -633,6 +633,14 @@
   color: #3E3E3E;
 }
 
+.take-booking .item-card .item-body .item-title, .take-booking .item-card .item-body .item-desc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
 .take-booking .item-card .item-body .item-price {
   font-size: 12px;
 }
