@@ -757,6 +757,12 @@
   margin-top: -2px;
 }
 
+.offcanvas .booking-detail .booking-product {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid gray;
+}
+
 .offcanvas .booking-detail .booking-header {
   margin-bottom: 2rem;
 }
@@ -879,8 +885,6 @@
 
 .offcanvas .booking-detail .add-to-basket {
   margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 2px solid grey;
 }
 
 .offcanvas .booking-detail .add-to-basket .price {

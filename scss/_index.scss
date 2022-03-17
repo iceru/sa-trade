@@ -195,6 +195,11 @@
     }
 
     .booking-detail {
+        .booking-product {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid gray;
+        }
         .booking-header {
             margin-bottom: 2rem;
             .booking-title {
@@ -297,8 +302,6 @@
 
         .add-to-basket {
             margin-top: 2rem;
-            padding-top: 1rem;
-            border-top: 2px solid grey;
             .price {
                 display: flex;
                 align-items: center;
