@@ -484,9 +484,11 @@
   margin-bottom: 4rem;
 }
 
-.login .content form .form-control {
+.login .content form .form-control,
+.login .content form .form-select {
   text-align: center;
   font-size: 24px;
+  padding: 6px 12px !important;
 }
 
 .login .content form .btn-wrapper {
@@ -500,7 +502,7 @@
 }
 
 .login .content form .btn-wrapper .button {
-  padding: .5rem 4rem;
+  padding: 0.5rem 4rem;
   font-size: 24px;
 }
 
