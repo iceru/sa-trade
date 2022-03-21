@@ -145,7 +145,7 @@
 
 .header .logo img {
   max-width: 175px;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .header .logo h4 {
@@ -180,7 +180,7 @@
   width: 2px;
   background-color: white;
   height: 80%;
-  content: '';
+  content: "";
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -200,8 +200,8 @@
 
 .header .menu-main ul li.active, .header .menu-main ul li:hover {
   border-bottom: 3px solid #CF0010;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .header .search-bar {
@@ -216,7 +216,8 @@
   padding: 0;
 }
 
-.header .search-bar .where, .header .search-bar .date {
+.header .search-bar .where,
+.header .search-bar .date {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,7 +248,7 @@
 }
 
 .header .search-bar .date span {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .header .search-bar .date input {
@@ -266,15 +267,21 @@
 }
 
 @media (max-width: 60em) {
-  .header .menu-top, .header .menu-main, .header .search-bar {
+  .header .menu-top,
+  .header .menu-main,
+  .header .search-bar {
     width: 100%;
+  }
+  .header .menu-top {
+    padding: 10px 2rem;
   }
   .header .menu-top ul {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-bottom: -0.5rem;
   }
-  .header .menu-top ul li:first-child {
-    margin-bottom: .5rem;
+  .header .menu-top ul li {
+    margin-bottom: 0.5rem;
   }
   .header .logo {
     margin-bottom: 1.5rem;
@@ -300,7 +307,8 @@
   .header .search-bar {
     padding: 1rem 0;
   }
-  .header .search-bar .where, .header .search-bar .date {
+  .header .search-bar .where,
+  .header .search-bar .date {
     margin-bottom: 1rem;
   }
   .header .search-bar .where .form-select {
@@ -315,12 +323,14 @@
   padding: 2rem 0;
 }
 
-.form-control, .form-select {
+.form-control,
+.form-select {
   border-radius: 0;
-  color: #2B2B2B;
+  color: #2b2b2b;
 }
 
-.form-control:focus, .form-select:focus {
+.form-control:focus,
+.form-select:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -357,8 +367,8 @@
 @media (max-width: 60em) {
   .search-filter {
     width: 100%;
-    padding: 1rem .5rem;
-    font-size: .85rem;
+    padding: 1rem 0.5rem;
+    font-size: 0.85rem;
   }
 }
 
@@ -393,7 +403,7 @@
 }
 
 .table {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .table .table-dark {
@@ -401,7 +411,8 @@
 }
 
 @media (min-width: 64em) {
-  .table th, .table td {
+  .table th,
+  .table td {
     padding: 1rem;
     font-size: 1rem;
   }
@@ -415,7 +426,7 @@
 
 .report-selection .title {
   color: gray;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-size: 20px;
 }
 
@@ -430,7 +441,7 @@
 }
 
 .report-selection .button {
-  padding: .5rem 4rem;
+  padding: 0.5rem 4rem;
 }
 
 .pagination .page-item .page-link {
