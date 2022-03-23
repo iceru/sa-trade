@@ -13,7 +13,7 @@
     background-color: rgba($color: white, $alpha: 0.8);
     border-radius: 0px 0px 20px 20px;
     padding: 10px 4rem;
-    width: 50%;
+    width: fit-content;
     margin: auto;
     margin-bottom: 2rem;
 
@@ -40,7 +40,6 @@
   .logo {
     text-align: center;
     color: white;
-    margin-bottom: 40px;
 
     img {
       max-width: 175px;
@@ -62,7 +61,7 @@
       color: white;
 
       li {
-        margin: 0 2rem;
+        margin: 0 1.5rem;
         padding-bottom: 4px;
         font-weight: 500;
         line-height: 1.25rem;
@@ -76,7 +75,7 @@
           content: "";
           top: 50%;
           transform: translateY(-50%);
-          right: -2rem;
+          right: -1.5rem;
           position: absolute;
         }
 
@@ -99,63 +98,9 @@
     }
   }
 
-  .search-bar {
-    display: none;
-    padding: 12px;
-    background-color: white;
-    width: 70%;
-    margin: auto;
-
-    .container-fluid {
-      padding: 0;
-    }
-
-    .where,
-    .date {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-right: 1px solid lightgray;
-    }
-
-    .where {
-      .form-select {
-        border: none;
-        text-align: center;
-        width: 80%;
-        margin: auto;
-        &:focus {
-          box-shadow: none;
-        }
-      }
-    }
-
-    .date {
-      position: relative;
-      span {
-        margin-right: 0.5rem;
-      }
-      cursor: pointer;
-      input {
-        visibility: hidden;
-        width: 0;
-        position: absolute;
-        left: 0;
-      }
-    }
-
-    .search {
-      padding-left: 1rem;
-      .form-control {
-        margin-right: 1rem;
-      }
-    }
-  }
-
   @include breakpoint(untilTablet) {
     .menu-top,
-    .menu-main,
-    .search-bar {
+    .menu-main {
       width: 100%;
     }
 
@@ -169,10 +114,6 @@
           margin-bottom: 0.5rem;
         }
       }
-    }
-
-    .logo {
-      margin-bottom: 1.5rem;
     }
 
     .menu-main {
@@ -212,6 +153,63 @@
       .search {
         padding-left: 0;
       }
+    }
+  }
+}
+
+.search-bar {
+  display: flex;
+  padding: 12px;
+  border: 1px solid lightgray;
+  width: 100%;
+  margin-bottom: 2rem;
+
+  @include breakpoint(untilTablet) {
+    width: 100%;
+  }
+
+  .container-fluid {
+    padding: 0;
+  }
+
+  .where,
+  .date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid lightgray;
+  }
+
+  .where {
+    .form-select {
+      border: none;
+      text-align: center;
+      width: 80%;
+      margin: auto;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .date {
+    position: relative;
+    span {
+      margin-right: 0.5rem;
+    }
+    cursor: pointer;
+    input {
+      visibility: hidden;
+      width: 0;
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  .search {
+    padding-left: 1rem;
+    .form-control {
+      margin-right: 1rem;
     }
   }
 }
