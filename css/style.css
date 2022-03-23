@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@400;500&display=swap");
 /* BREAKPOINTS */
+.primary-color {
+  color: #cf0010;
+}
+
 .button {
   padding: .5rem 1.5rem;
   cursor: pointer;
@@ -24,7 +28,7 @@
 }
 
 .button.button-primary {
-  background-color: #CF0010;
+  background-color: #cf0010;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
@@ -200,7 +204,7 @@
 }
 
 .header .menu-main ul li.active, .header .menu-main ul li:hover {
-  border-bottom: 3px solid #CF0010;
+  border-bottom: 3px solid #cf0010;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -337,7 +341,7 @@
 }
 
 .primary-color {
-  color: #CF0010;
+  color: #cf0010;
 }
 
 .page-title {
@@ -374,7 +378,7 @@
 }
 
 .search-filter .form-control {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: white;
   background-color: transparent;
@@ -664,7 +668,7 @@
 }
 
 .take-booking .item-card .item-body .item-more {
-  color: #CF0010;
+  color: #cf0010;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -734,7 +738,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #CF0010;
+  color: #cf0010;
   font-weight: 500;
   margin-bottom: 4.5rem;
 }
@@ -749,7 +753,7 @@
   padding: 1rem .75rem;
   -webkit-box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.15);
-  border-top: 2px solid #CF0010;
+  border-top: 2px solid #cf0010;
   margin-bottom: 2rem;
 }
 
@@ -783,7 +787,7 @@
 
 .offcanvas .booking-detail .booking-header .booking-title {
   font-size: 22px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   margin-bottom: .25rem;
 }
@@ -791,7 +795,7 @@
 .offcanvas .booking-detail .booking-header .booking-max-guest {
   font-size: 14px;
   margin-bottom: .25rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 
@@ -805,7 +809,7 @@
 }
 
 .offcanvas .booking-detail .booking-start-date {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 
@@ -869,9 +873,9 @@
 }
 
 .offcanvas .booking-detail .booking-start-date .booking-widget .calendars .calendar-item.selected, .offcanvas .booking-detail .booking-start-date .booking-widget .calendars .calendar-item:not(.disabled):hover {
-  background-color: #CF0010;
+  background-color: #cf0010;
   color: white;
-  border-color: #CF0010;
+  border-color: #cf0010;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
@@ -968,7 +972,7 @@
 }
 
 .your-basket .content .content-body .basket-container {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-weight: 400;
 }
@@ -1024,7 +1028,7 @@
 }
 
 .your-basket .content .content-body .basket-container .basket-body .basket-item .action .button .fa-trash {
-  color: #CF0010;
+  color: #cf0010;
 }
 
 .your-basket .content .content-body .basket-container .basket-body .basket-item .price-img {
@@ -1342,7 +1346,7 @@
 }
 
 .settings .content-body .form-label {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: gray;
   font-weight: 500;

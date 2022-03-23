@@ -1,40 +1,43 @@
-$primary: #CF0010; 
+$primary: #cf0010;
 
 /* BREAKPOINTS */
 @mixin breakpoint($point) {
-    @if $point == desktop {
-      @media (min-width: 80em) {
-        @content;
-      }
-    } @else if $point == laptop {
-      @media (min-width: 64em) {
-        @content;
-      }
-    } @else if $point == largeDesktop {
-      @media (min-width: 87.5em) {
-        @content;
-      }
-    } @else if $point == tablet {
-      @media (min-width: 50em) {
-        @content;
-      }
-    } @else if $point == phablet {
-      @media (min-width: 37.5em) {
-        @content;
-      }
-    } @else if $point == mobileonly {
-      @media (max-width: 37.5em) {
-        @content;
-      }
+  @if $point == desktop {
+    @media (min-width: 80em) {
+      @content;
     }
-    @else if $point == untilTablet {
-      @media (max-width: 60em) {
-        @content;
-      }
+  } @else if $point == laptop {
+    @media (min-width: 64em) {
+      @content;
     }
+  } @else if $point == largeDesktop {
+    @media (min-width: 87.5em) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media (min-width: 50em) {
+      @content;
+    }
+  } @else if $point == phablet {
+    @media (min-width: 37.5em) {
+      @content;
+    }
+  } @else if $point == mobileonly {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  } @else if $point == untilTablet {
+    @media (max-width: 60em) {
+      @content;
+    }
+  }
 }
 
 @mixin roboto() {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
+}
+
+.primary-color {
+  color: $primary;
 }
