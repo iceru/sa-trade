@@ -252,7 +252,6 @@
   width: 85%;
   margin: auto;
   position: relative;
-  margin-bottom: 2rem;
 
   @include breakpoint(untilTablet) {
     width: 100%;
@@ -282,6 +281,34 @@
     top: 50%;
     transform: translateY(-50%);
     left: 1rem;
+  }
+}
+
+.filter-items {
+  background-color: rgb(63, 63, 63);
+  color: white;
+  padding: 1rem;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 2rem;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-bottom: solid 10px rgb(63, 63, 63);
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+  }
+
+  @include breakpoint(untilTablet) {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    font-size: 0.85rem;
   }
 }
 
