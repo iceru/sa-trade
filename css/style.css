@@ -1257,6 +1257,18 @@
   border-bottom: 1px solid lightgray;
 }
 
+.edits .amandments {
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+.edits .amandments .title {
+  font-size: 1.15rem;
+  margin-bottom: 0.5;
+  padding-bottom: 1rem;
+  font-weight: 700;
+}
+
 .admin .content-body {
   margin-top: 2rem;
 }
