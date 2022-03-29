@@ -410,11 +410,35 @@
 .filter-items {
   background-color: #3f3f3f;
   color: white;
-  padding: 1rem;
   width: 85%;
   margin: auto;
   margin-bottom: 2rem;
   position: relative;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.filter-items .row {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.filter-items.active {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  padding: 1rem;
+}
+
+.filter-items.active .row {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
 }
 
 .filter-items:after {
