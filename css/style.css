@@ -5,7 +5,7 @@
 }
 
 .button {
-  padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   cursor: pointer;
   color: white;
   display: -webkit-inline-box;
@@ -25,57 +25,56 @@
           user-select: none;
   border: none;
   font-weight: 600;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .button.button-primary {
   background-color: #cf0010;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
 }
 
 .button.button-primary:hover {
   background-color: #b6000e;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
   color: white;
+}
+
+.button.button-blue {
+  background-color: #0d6efd;
+}
+
+.button.button-blue:hover {
+  background-color: #267dfd;
 }
 
 .button.button-black {
   background-color: black;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
 }
 
 .button.button-black:hover {
   background-color: #0d0d0d;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
 }
 
 .button.button-grey {
-  background-color: #9D9D9D;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  background-color: #9d9d9d;
 }
 
 .button.button-grey:hover {
   background-color: #aaaaaa;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
   color: white;
 }
 
 .button.button-grey-black {
-  background-color: #EAEAEA;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  background-color: #eaeaea;
   color: black;
 }
 
 .button.button-grey-black:hover {
   background-color: #f7f7f7;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
   color: black;
 }
 
@@ -86,15 +85,11 @@
 }
 
 .button.button-cancel {
-  background-color: #B7B7B7;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  background-color: #b7b7b7;
 }
 
 .button.button-cancel:hover {
   background-color: #c4c4c4;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
 }
 
 .header {
@@ -359,6 +354,16 @@
 
 .page-title span {
   text-transform: capitalize;
+}
+
+.left-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.found-results {
+  margin-bottom: 1rem;
 }
 
 .search-filter {
@@ -1188,14 +1193,15 @@
 .edits .content-header .header-title {
   font-weight: 600;
   font-size: 22px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid lightgray;
 }
 
 .edits .content-header .header-text {
   padding: 1rem 0;
-  border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .edits .content-header .header-text small {
@@ -1213,11 +1219,42 @@
 }
 
 .edits .content-footer .btn-wrapper .button:first-child {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .edits .status {
   margin-bottom: 3rem;
+}
+
+.edits .current-booking {
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.edits .current-booking .title {
+  border-bottom: 1px solid lightgray;
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 700;
+}
+
+.edits .current-confirmation {
+  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+  margin-bottom: 1.5rem;
+  padding: 1rem 0;
+}
+
+.edits .total {
+  margin-bottom: 3rem;
+}
+
+.edits .total .d-flex:not(:last-child) {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid lightgray;
 }
 
 .admin .content-body {

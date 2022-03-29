@@ -1,43 +1,73 @@
 .edits {
-    .content-header {
-        .action-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 2rem;
-        }
-
-        .header-title {
-            font-weight: 600;
-            font-size: 22px;
-            margin-bottom: 1rem;
-        }
-
-        .header-text {
-            padding: 1rem 0;
-            border-top: 1px solid lightgray;
-            border-bottom: 1px solid lightgray;
-            margin-bottom: 2rem;
-
-            small {
-                font-size: 12px;
-            }
-        }
+  .content-header {
+    .action-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem;
     }
 
-    .content-footer {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 2rem;
-
-        .btn-wrapper {
-            .button:first-child{
-                margin-right: .5rem;
-            }
-        }
+    .header-title {
+      font-weight: 600;
+      font-size: 22px;
+      margin-bottom: 0.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid lightgray;
     }
 
-    .status {
-        margin-bottom: 3rem;
+    .header-text {
+      padding: 1rem 0;
+      border-bottom: 1px solid lightgray;
+      margin-bottom: 1rem;
+
+      small {
+        font-size: 12px;
+      }
     }
+  }
+
+  .content-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    .btn-wrapper {
+      .button:first-child {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  .status {
+    margin-bottom: 3rem;
+  }
+
+  .current-booking {
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    .title {
+      border-bottom: 1px solid lightgray;
+      font-size: 1.15rem;
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      font-weight: 700;
+    }
+  }
+
+  .current-confirmation {
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    margin-bottom: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .total {
+    margin-bottom: 3rem;
+    .d-flex:not(:last-child) {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid lightgray;
+    }
+  }
 }
