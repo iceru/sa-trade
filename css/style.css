@@ -806,6 +806,33 @@
   margin-bottom: 2rem;
 }
 
+.offcanvas .choose-date .button-next {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 1rem;
+  background-color: #cf0010;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.offcanvas .choose-date .button-next:hover, .offcanvas .choose-date .button-next:focus {
+  background-color: #ff0316;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
 .offcanvas .choose-date .choose-text {
   margin-right: 1.25rem;
 }
