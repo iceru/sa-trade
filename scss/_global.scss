@@ -319,6 +319,7 @@
 .table {
   .table-dark {
     --bs-table-bg: black !important;
+    vertical-align: top;
   }
   font-size: 0.8rem;
   @include breakpoint(laptop) {

@@ -447,6 +447,7 @@
 
 .table .table-dark {
   --bs-table-bg: black !important;
+  vertical-align: top;
 }
 
 @media (min-width: 64em) {
