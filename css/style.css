@@ -93,7 +93,7 @@
 }
 
 .header {
-  background-image: url("images/header.png");
+  background-image: url("../images/header.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -535,7 +535,7 @@
 
 .login {
   width: 100%;
-  background-image: url("images/header.png");
+  background-image: url("../images/header.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
