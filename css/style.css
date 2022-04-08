@@ -541,7 +541,7 @@
 
 .login {
   width: 100%;
-  background-image: url("images/header.png");
+  background-image: url("../images/header.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -569,6 +569,17 @@
 .login .content form {
   width: 100%;
   margin-bottom: 4rem;
+}
+
+.login .content form .form-label {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.login .content form .form-helper {
+  color: white;
+  font-size: 1rem;
 }
 
 .login .content form .form-control,
