@@ -49,6 +49,7 @@
 
 .button.button-blue:hover {
   background-color: #267dfd;
+  color: white;
 }
 
 .button.button-black {
