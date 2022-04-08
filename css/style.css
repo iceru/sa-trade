@@ -1211,7 +1211,7 @@
   }
 }
 
-.edits .content-header .action-header {
+.content-header .action-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1224,7 +1224,7 @@
   margin-bottom: 2rem;
 }
 
-.edits .content-header .header-title {
+.content-header .header-title {
   font-weight: 600;
   font-size: 22px;
   margin-bottom: 0.5rem;
@@ -1232,14 +1232,20 @@
   border-bottom: 1px solid lightgray;
 }
 
-.edits .content-header .header-text {
+.content-header .header-text {
   padding: 1rem 0;
   border-bottom: 1px solid lightgray;
-  margin-bottom: 1rem;
+  border-top: 1px solid lightgray;
+  margin-bottom: 1.5rem;
 }
 
-.edits .content-header .header-text small {
+.content-header .header-text small {
   font-size: 12px;
+}
+
+.edits .content-header .header-text {
+  border-top: none;
+  margin-bottom: 1rem;
 }
 
 .edits .content-footer {
