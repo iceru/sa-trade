@@ -1,9 +1,10 @@
 .header {
-  background-image: url("images/header.png");
+  background-image: url("../images/header.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding-bottom: 1rem;
+  min-height: 147px;
 
   .row {
     margin: 0;
@@ -306,6 +307,12 @@
   visibility: hidden;
   transition: all 0.3s ease;
   padding: 0;
+
+  @include breakpoint(laptop) {
+    .form-control, .form-select {
+      width: 50%;
+    }
+  }
 
   .row {
     height: 0;
