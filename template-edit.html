@@ -146,50 +146,105 @@
                     <div class="content-body">
                         <div class="mb-4">
                             <div class="mb-2">
-                                <label for="txaname" class="form-label">
-                                    TXA Name
-                                </label>
+                                <div class="d-flex justify-content-between">
+                                    <label for="txaname" class="form-label">
+                                        TXA Name
+                                    </label>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" name="" id="checkTxa" value="checkedValue"
+                                             />
+                                        <label class="form-check-label" for="">
+                                            Override with
+                                        </label>
+                                    </div>
+                                </div>
                                 <input type="text" class="form-control" id="txaname" />
                             </div>
-                            <div class="form-check mb-2">
-                                <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue"
-                                    checked />
-                                <label class="form-check-label" for="">
-                                    Override with
-                                </label>
-                            </div>
+                            
                             <input type="text" class="form-control" id="txaoverride" />
+
+                            <script>
+                                 $(document).ready(function () {
+                                    $('#txaoverride').hide();
+
+                                    $('#checkTxa').on('click', function () {
+                                        if ($(this).prop('checked')) {
+                                            $('#txaoverride').fadeIn();
+                                        } else {
+                                            $('#txaoverride').hide();
+                                        }
+                                    });
+                                 });
+                            </script>
                         </div>
                         <div class="mb-4">
                             <div class="mb-2">
-                                <label for="txashort" class="form-label">
-                                    TXA Short Description
-                                </label>
+                                <div class="d-flex justify-content-between">
+                                    <label for="txashort" class="form-label">
+                                        TXA Short Description
+                                    </label>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" name="" id="checkShort" value="checkedValue"
+                                             />
+                                        <label class="form-check-label" for="">
+                                            Override with
+                                        </label>
+                                    </div>
+                                </div>
                                 <textarea class="form-control" name="txashort" id="txashort" rows="4"></textarea>
                             </div>
-                            <div class="form-check mb-2">
-                                <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue"
-                                    checked />
-                                <label class="form-check-label" for="">
-                                    Override with
-                                </label>
+                            
+                            <div class="wrapperShort">
+                                <textarea id="tiny" class="tiny"></textarea>
                             </div>
-                            <textarea id="tiny" class="tiny"></textarea>
+
+                            <script>
+                                $(document).ready(function () {
+                                    $('.wrapperShort').hide();
+
+                                    $('#checkShort').on('click', function () {
+                                        if ($(this).prop('checked')) {
+                                            $('.wrapperShort').fadeIn();
+                                        } else {
+                                            $('.wrapperShort').hide();
+                                        }
+                                    });
+                                });
+                            </script>
                         </div>
                         <div class="mb-4">
                             <div class="mb-2">
-                                <label for="txashort" class="form-label">
-                                    TXA Long Description
-                                </label>
+                                <div class="d-flex justify-content-between">
+                                    <label for="txashort" class="form-label">
+                                        TXA Long Description
+                                    </label>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" name="" id="checkLong" value="checkedValue" />
+                                        <label class="form-check-label" for="">
+                                            Override with
+                                        </label>
+                                    </div>
+                                </div>
                                 <textarea class="form-control" name="txalong" id="txalong" rows="4"></textarea>
                             </div>
-                            <div class="form-check mb-2">
-                                <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" />
-                                <label class="form-check-label" for="">
-                                    Override with
-                                </label>
+                           
+                            <div class="wrapperLong">
+                                <textarea id="tiny" class="tiny" name="txalongoverride"></textarea>
                             </div>
-                            <textarea id="tiny" class="tiny" name="txalongoverride"></textarea>
+                            
+                            <script>
+                                $(document).ready(function () {
+                                    $('.wrapperLong').hide();
+
+                                    $('#checkLong').on('click', function () {
+                                        if ($(this).prop('checked')) {
+                                            $('.wrapperLong').fadeIn();
+                                        } else {
+                                            $('.wrapperLong').hide();
+                                        }
+                                    });
+                                });
+                            </script>
                         </div>
                         <div class="mb-3">
                             <label for="service-type" class="form-label">Service Type</label>
@@ -449,12 +504,18 @@
 </body>
 
 <script>
-    tinymce.init({
-        selector: '.tiny',
-        plugins:
-            'advlist autolink lists link image charmap print preview hr anchor pagebreak',
-        toolbar_mode: 'floating',
-    })
+    function initTinyMce() {
+        tinymce.init ({
+            selector: '.tiny',
+            plugins:
+                'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+            toolbar_mode: 'floating',
+        })
+    }
+
+    $(document).ready(function () {
+        initTinyMce();
+    });
 </script>
 
 </html>
